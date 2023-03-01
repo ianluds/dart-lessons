@@ -1,14 +1,28 @@
-import 'dart:io';
-
+// dart as several data tpes search as intagrs double string  etc.
 void main() {
-  stdout.write('Enter a number: ');
-  int number = int.parse(stdin.readLineSync()!);
+  
+  // 1. STRING.- this is a sequence of charectors
+  String name = "Ian Aluda";
+  print("My name is $name");
+  
+  //integer- whole numbers
+  int age = 19;
+  print("I am $age years old");
+  
+  //Double- fractions/decimals9
+  double height = 1.8;
+  print("my heighy is $height meters");
+  
+  //list also known as array(used to list a collection of orderd items )
+  List<String> schools = ["university of Nairobi", " and power learn Project"];
+  print("currently enroled at $schools");
 
-  if (number > 10) {
-    print('Your number is greater than 10');
-  } else if (number < 10) {
-    print('Your number is less than 10');
-  } else {
-    print('Your number is equal to 10');
-  }
+  
+  //map- five a test location
+  Map<String, String> address = {
+    "Country": "Kenya",
+    "city": "nairobi",
+    "Zipcode": "00100"
+  };
+  print("Location ; $address");
 }
